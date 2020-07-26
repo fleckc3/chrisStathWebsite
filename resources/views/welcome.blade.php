@@ -11,11 +11,15 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <script src="{{ asset('js/app.js') }}" defer></script>
         <script src="https://unpkg.com/vue-slider"></script>
-       
+
     </head>
     <body>
        <div id="app">
+
+
             <index></index>
+           
+
 
        </div>
     </body>
