@@ -1935,17 +1935,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2034,23 +2023,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _SpotifyPlayer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SpotifyPlayer */ "./resources/js/components/SpotifyPlayer.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -6577,7 +6549,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#bg-full[data-v-fa44bb0e] {\n\n    width: 100vw;\n    height: 100vh;\n    background-image: url(https://www.adorama.com/alc/wp-content/uploads/2017/08/shutterstock_415922566.jpg);\n    background-position: center center;\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-color: black;\n    background-size: cover;\n}\nh6[data-v-fa44bb0e] {\n    font-size: 4rem;\n    color: white;\n}\n", ""]);
+exports.push([module.i, "\n#bg-full[data-v-fa44bb0e] {\n    width: 100%;\n    height: 100vh;\n    background-image: url(https://www.adorama.com/alc/wp-content/uploads/2017/08/shutterstock_415922566.jpg);\n    background-position: center center;\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-color: black;\n    background-size: cover;\n}\nh6[data-v-fa44bb0e] {\n    font-size: 4rem;\n    color: white;\n}\ndiv.trans[data-v-fa44bb0e] {\n    background: rgba(255, 255, 255, 0.4);\n}\n\n\n", ""]);
 
 // exports
 
@@ -41628,7 +41600,7 @@ var render = function() {
       "nav",
       {
         staticClass:
-          "navbar navbar-expand-sm navbar-dark justify-content-center sticky-top",
+          "navbar navbar-header fixed-top navbar-expand-md navbar-dark justify-content-center",
         staticStyle: { "background-color": "#000000" }
       },
       [
@@ -41642,16 +41614,8 @@ var render = function() {
                     _c("span", [_vm._v("Home")])
                   ]),
                   _vm._v(" "),
-                  _c("a", { attrs: { id: "cat", href: "#" } }, [
-                    _c("span", [_vm._v("Catalogue")])
-                  ]),
-                  _vm._v(" "),
                   _c("a", { attrs: { id: "epk", href: "#" } }, [
                     _c("span", [_vm._v("Electronic Press Kit")])
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { id: "contact", href: "#" } }, [
-                    _c("span", [_vm._v("Contact")])
                   ])
                 ])
               ],
@@ -41798,73 +41762,36 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "bg-dark" }, [
-    _c("div", { attrs: { id: "bg-full" } }),
-    _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _c("hr", {
-      staticClass: "mx-auto mt-0 bg-light",
-      staticStyle: { width: "50%" }
-    }),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "row m-auto justify-content-between mb-4 bg-black" },
-      [
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "card border-0" }, [
-            _vm._m(1),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "card-body bg-secondary" },
-              [_c("spotify-player")],
-              1
-            )
-          ])
-        ]),
+  return _c("div", [
+    _c("div", { staticClass: "position-fixed", attrs: { id: "bg-full" } }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row mt-5 pt-2" }),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "card border-0" }, [
-            _vm._m(2),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "card-body bg-secondary" },
-              [_c("spotify-player")],
-              1
-            )
-          ])
-        ]),
+        _vm._m(0),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "card border-0" }, [
-            _vm._m(3),
-            _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-3 mr-auto ml-2 mb-1" }, [
             _c(
               "div",
-              { staticClass: "card-body bg-secondary" },
-              [_c("spotify-player")],
-              1
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "card border-0" }, [
-            _vm._m(4),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "card-body bg-secondary" },
-              [_c("spotify-player")],
-              1
+              {
+                staticClass:
+                  "card rounded border-light align-content-center trans"
+              },
+              [
+                _vm._m(1),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "rounded-bottom card-body" },
+                  [_c("spotify-player")],
+                  1
+                )
+              ]
             )
           ])
         ])
-      ]
-    )
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -41872,11 +41799,76 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "d-flex justify-content-center bg-dark" }, [
-      _c("div", { staticClass: "row pt-3" }, [
-        _c("div", { staticClass: "col" }, [
-          _c("h6", { staticClass: "mb-0" }, [_vm._v("Music")])
-        ])
+    return _c("div", { staticClass: "row mt-5" }, [
+      _c("div", { staticClass: "mx-auto" }, [
+        _c(
+          "a",
+          { attrs: { href: "https://www.instagram.com/chrisstathmusic/" } },
+          [
+            _c("button", { staticClass: "btn btn-outline-light mr-1" }, [
+              _c("i", { staticClass: "fab fa-2x fa-instagram pl-1 pr-1 pt-1" })
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://open.spotify.com/artist/6RZiysr25NvqsC76k0jcdn"
+            }
+          },
+          [
+            _c("button", { staticClass: "btn btn-outline-light mr-1" }, [
+              _c("i", { staticClass: "fab fa-2x fa-spotify pl-1 pr-1 pt-1" })
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            attrs: {
+              href:
+                "https://music.apple.com/us/artist/chris-stath/1493357107?itsct=music_box&itscg=30200&ls=1&app=music"
+            }
+          },
+          [
+            _c("button", { staticClass: "btn btn-outline-light mr-1" }, [
+              _c("i", { staticClass: "fab fa-2x fa-apple pl-1 pr-1 pt-1" })
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://www.youtube.com/channel/UCSphXoxsxYp4uK37rVDl6lA"
+            }
+          },
+          [
+            _c("button", { staticClass: "btn btn-outline-light mr-1" }, [
+              _c("i", { staticClass: "fab fa-2x fa-youtube pt-1" })
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "https://soundcloud.com/chrisstathmusic" } }, [
+          _c("button", { staticClass: "btn btn-outline-light mr-1" }, [
+            _c("i", { staticClass: "fab fa-2x fa-soundcloud pt-1" })
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "a",
+          { attrs: { href: "https://www.facebook.com/ChrisStathMusic" } },
+          [
+            _c("button", { staticClass: "btn btn-outline-light mr-1" }, [
+              _c("i", { staticClass: "fab fa-2x fa-facebook pl-1 pr-1 pt-1" })
+            ])
+          ]
+        )
       ])
     ])
   },
@@ -41884,7 +41876,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header bg-secondary" }, [
+    return _c("div", { staticClass: "card-header border-0 bg-dark" }, [
       _c("iframe", {
         staticStyle: { border: "none", overflow: "hidden" },
         attrs: {
@@ -41892,66 +41884,8 @@ var staticRenderFns = [
             "https://open.spotify.com/follow/1/?uri=spotify:artist:6RZiysr25NvqsC76k0jcdn?si=uzWgTEBjQvaBKGWZRSocJw&size=detail&theme=dark",
           width: "250",
           height: "56",
-          scrolling: "no",
           frameborder: "0",
-          allowtransparency: "true"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header bg-secondary" }, [
-      _c("iframe", {
-        staticStyle: { border: "none", overflow: "hidden" },
-        attrs: {
-          src:
-            "https://open.spotify.com/follow/1/?uri=spotify:artist:6RZiysr25NvqsC76k0jcdn?si=uzWgTEBjQvaBKGWZRSocJw&size=detail&theme=dark",
-          width: "250",
-          height: "56",
-          scrolling: "no",
-          frameborder: "0",
-          allowtransparency: "true"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header bg-secondary" }, [
-      _c("iframe", {
-        staticStyle: { border: "none", overflow: "hidden" },
-        attrs: {
-          src:
-            "https://open.spotify.com/follow/1/?uri=spotify:artist:6RZiysr25NvqsC76k0jcdn?si=uzWgTEBjQvaBKGWZRSocJw&size=detail&theme=dark",
-          width: "250",
-          height: "56",
-          scrolling: "no",
-          frameborder: "0",
-          allowtransparency: "true"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header bg-secondary" }, [
-      _c("iframe", {
-        staticStyle: { border: "none", overflow: "hidden" },
-        attrs: {
-          src:
-            "https://open.spotify.com/follow/1/?uri=spotify:artist:6RZiysr25NvqsC76k0jcdn?si=uzWgTEBjQvaBKGWZRSocJw&size=detail&theme=dark",
-          width: "250",
-          height: "56",
-          scrolling: "no",
-          frameborder: "0",
-          allowtransparency: "true"
+          allowtransparency: "false"
         }
       })
     ])
@@ -41989,7 +41923,7 @@ var staticRenderFns = [
       _c("iframe", {
         attrs: {
           src: "https://open.spotify.com/embed/album/0yzJrWE4nwbOp8oQK1ETSb",
-          width: "300",
+          width: "280",
           height: "380",
           frameborder: "0",
           allowtransparency: "true",
@@ -57274,21 +57208,25 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _Index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Index */ "./resources/js/Index.vue");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _Index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Index */ "./resources/js/Index.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
 
+
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
-var app = new Vue({
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
+  mode: 'history',
   el: '#app',
-  router: _routes__WEBPACK_IMPORTED_MODULE_0__["default"],
+  router: _routes__WEBPACK_IMPORTED_MODULE_1__["default"],
   components: {
-    index: _Index__WEBPACK_IMPORTED_MODULE_2__["default"]
+    index: _Index__WEBPACK_IMPORTED_MODULE_3__["default"]
   }
 });
 

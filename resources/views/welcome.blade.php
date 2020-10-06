@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/de17b58ec4.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <script src="{{ asset('js/app.js') }}" defer></script>
         <script src="https://unpkg.com/vue-slider"></script>
@@ -18,7 +19,7 @@
 
 
             <index></index>
-           
+
 
 
        </div>
