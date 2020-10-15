@@ -8,7 +8,7 @@
                             <a id="home" href="#">
                                 <span>Home</span>
                             </a>
-                            <a id="epk" href="#">
+                            <a id="epk" v-on:click="showEpk" href="#">
                                 <span>Electronic Press Kit</span>
                             </a>
                         </Slide>
@@ -29,7 +29,17 @@ import { Slide } from 'vue-burger-menu';
 export default {
     components: {
         Slide
-    }
+    },
+    methods: {
+        showEpk() {
+            var pdf = '../assets/Chris_Stath_EPK_2.pdf';
+            window.open(pdf);
+        }
+    },
 }
 </script>
+
+<style scoped>
+
+</style>
 

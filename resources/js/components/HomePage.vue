@@ -6,14 +6,14 @@
                 <div class="row mt-5">
                     <div class="mx-auto">
                         <a href="https://www.instagram.com/chrisstathmusic/">
-                            <button class="btn btn-outline-light mr-1"><i class="fab fa-2x fa-instagram pl-1 pr-1 pt-1">
+                            <button class="btn btn-outline-light mr-1"><i class="fab fa-2x fa-instagram pt-1">
                                 </i>
                             </button>
                         </a>
 
                         <a href="https://open.spotify.com/artist/6RZiysr25NvqsC76k0jcdn">
                             <button class="btn btn-outline-light mr-1">
-                                <i class="fab fa-2x fa-spotify pl-1 pr-1 pt-1"></i>
+                                <i class="fab fa-2x fa-spotify pt-1"></i>
                             </button>
                         </a>
 
@@ -37,16 +37,16 @@
 
                         <a href="https://www.facebook.com/ChrisStathMusic">
                             <button class="btn btn-outline-light mr-1">
-                                <i class="fab fa-2x fa-facebook pl-1 pr-1 pt-1"></i>
+                                <i class="fab fa-2x fa-facebook pt-1"></i>
                             </button>
                         </a>
 
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 mr-auto ml-2 mb-1">
-                        <div class="card rounded border-light align-content-center trans" >
-                            <div class="card-header border-0 bg-dark">
+                    <div class="col-md-6 mx-auto mt-3 mb-1">
+                        <div class="card rounded border-light trans" >
+                            <div class="card-header border-0 trans">
                                 <iframe
                                     src="https://open.spotify.com/follow/1/?uri=spotify:artist:6RZiysr25NvqsC76k0jcdn?si=uzWgTEBjQvaBKGWZRSocJw&size=detail&theme=dark"
                                     width="250"
@@ -57,7 +57,9 @@
                                 ></iframe>
                             </div>
                             <div class="rounded-bottom card-body">
-                                <spotify-player></spotify-player>
+                                <div class="col-12">
+                                    <spotify-player></spotify-player>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -88,8 +90,8 @@ import SpotifyPlayer from "./SpotifyPlayer";
     #bg-full {
         width: 100%;
         height: 100vh;
-        background-image: url(https://www.adorama.com/alc/wp-content/uploads/2017/08/shutterstock_415922566.jpg);
-        background-position: center center;
+        background-image: url(/img/landing-01.png);
+        background-position: center 66px;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-color: black;
@@ -102,7 +104,7 @@ import SpotifyPlayer from "./SpotifyPlayer";
     }
 
     div.trans {
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(80, 77, 77, 0.4);
     }
 
 
