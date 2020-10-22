@@ -3,7 +3,7 @@
         <iframe
             src="https://open.spotify.com/embed/album/0yzJrWE4nwbOp8oQK1ETSb"
             width="100%"
-            height="400"
+            height="250"
             frameborder="0"
             allowtransparency="true"
             allow="encrypted-media"

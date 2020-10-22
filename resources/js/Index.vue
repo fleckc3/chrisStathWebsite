@@ -3,15 +3,17 @@
         <nav class="navbar navbar-header fixed-top navbar-expand-md navbar-dark justify-content-center" style="background-color: #000000">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <div >
-                        <Slide>
+                    <div>
+
+                        <img class="lemon" src="/img/lemon_head.png" alt="">
+                        <!-- <Slide>
                             <a id="home" href="#">
                                 <span>Home</span>
                             </a>
                             <a id="epk" v-on:click="showEpk" href="#">
                                 <span>Electronic Press Kit</span>
                             </a>
-                        </Slide>
+                        </Slide> -->
                     </div>
                 </li>
             </ul>
@@ -40,6 +42,9 @@ export default {
 </script>
 
 <style scoped>
-
+   .lemon {
+        height: 60px;
+        width: 50px;
+    }
 </style>
 

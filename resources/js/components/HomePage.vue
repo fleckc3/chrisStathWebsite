@@ -1,65 +1,94 @@
 <template>
     <div>
-        <div id="bg-full" class="position-fixed">
-            <div class="container-fluid">
-                <div class="row mt-5 pt-2"></div>
-                <div class="row mt-5">
-                    <div class="mx-auto">
-                        <a href="https://www.instagram.com/chrisstathmusic/">
-                            <button class="btn btn-outline-light mr-1"><i class="fab fa-2x fa-instagram pt-1">
-                                </i>
-                            </button>
-                        </a>
-
-                        <a href="https://open.spotify.com/artist/6RZiysr25NvqsC76k0jcdn">
-                            <button class="btn btn-outline-light mr-1">
-                                <i class="fab fa-2x fa-spotify pt-1"></i>
-                            </button>
-                        </a>
-
-                        <a href="https://music.apple.com/us/artist/chris-stath/1493357107?itsct=music_box&itscg=30200&ls=1&app=music">
-                            <button class="btn btn-outline-light mr-1">
-                                <i class="fab fa-2x fa-apple pl-1 pr-1 pt-1"></i>
-                            </button>
-                        </a>
-
-                        <a href="https://www.youtube.com/channel/UCSphXoxsxYp4uK37rVDl6lA">
-                            <button class="btn btn-outline-light mr-1">
-                                <i class="fab fa-2x fa-youtube pt-1"></i>
-                            </button>
-                        </a>
-
-                        <a href="https://soundcloud.com/chrisstathmusic">
-                            <button class="btn btn-outline-light mr-1">
-                                <i class="fab fa-2x fa-soundcloud pt-1"></i>
-                            </button>
-                        </a>
-
-                        <a href="https://www.facebook.com/ChrisStathMusic">
-                            <button class="btn btn-outline-light mr-1">
-                                <i class="fab fa-2x fa-facebook pt-1"></i>
-                            </button>
-                        </a>
-
+        <div id="bg-full" class="position-fixed"></div>
+        <div class="container-fluid">
+            <div class="row mt-5"></div>
+            <div class="row mt-lg-5">
+                <div class="col-sm-4 mr-auto mt-3 mb-1">
+                    <div class="card rounded border-light trans" >
+                        <div class="card-header border-0 trans">
+                            <div class="col-sm-12">
+                                     <iframe
+                                        src="https://open.spotify.com/follow/1/?uri=spotify:artist:6RZiysr25NvqsC76k0jcdn?si=uzWgTEBjQvaBKGWZRSocJw&size=detail&theme=dark"
+                                        width="250"
+                                        height="56"
+                                        frameborder="0"
+                                        style="border:none; overflow:hidden;"
+                                        allowtransparency="false"
+                                    ></iframe>
+                            </div>
+                        </div>
+                        <div class="rounded-bottom card-body">
+                            <div class="col-sm-12">
+                                <spotify-player></spotify-player>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 mx-auto mt-3 mb-1">
-                        <div class="card rounded border-light trans" >
-                            <div class="card-header border-0 trans">
-                                <iframe
-                                    src="https://open.spotify.com/follow/1/?uri=spotify:artist:6RZiysr25NvqsC76k0jcdn?si=uzWgTEBjQvaBKGWZRSocJw&size=detail&theme=dark"
-                                    width="250"
-                                    height="56"
-                                    frameborder="0"
-                                    style="border:none; overflow:hidden;"
-                                    allowtransparency="false"
-                                ></iframe>
+                <div class="col-sm-4 my-auto">
+                    <div class="container mt-lg-5">
+                        <div class="row mt-lg-5">
+                            <div class="col d-flex justify-content-center mt-lg-5">
+                                <a href="https://www.instagram.com/chrisstathmusic/">
+                                    <button class="btn btn-light mr-1"><i class="fab fa-2x fa-instagram pt-1">
+                                        </i>
+                                    </button>
+                                </a>
+
+                                <a href="https://open.spotify.com/artist/6RZiysr25NvqsC76k0jcdn">
+                                    <button class="btn btn-light btn mr-1">
+                                        <i class="fab fa-2x fa-spotify pt-1"></i>
+                                    </button>
+                                </a>
+
+                                <a href="https://music.apple.com/us/artist/chris-stath/1493357107?itsct=music_box&itscg=30200&ls=1&app=music">
+                                    <button class="btn btn-light mr-1">
+                                        <i class="fab fa-2x fa-apple pl-1 pr-1 pt-1"></i>
+                                    </button>
+                                </a>
+
+                                <a href="https://www.youtube.com/channel/UCSphXoxsxYp4uK37rVDl6lA">
+                                    <button class="btn btn-light mr-1">
+                                        <i class="fab fa-2x fa-youtube pt-1"></i>
+                                    </button>
+                                </a>
+
+                                <a href="https://soundcloud.com/chrisstathmusic">
+                                    <button class="btn btn-light mr-1">
+                                        <i class="fab fa-2x fa-soundcloud pt-1"></i>
+                                    </button>
+                                </a>
+
+                                <a href="https://www.facebook.com/ChrisStathMusic">
+                                    <button class="btn btn-light mr-1">
+                                        <i class="fab fa-2x fa-facebook pt-1"></i>
+                                    </button>
+                                </a>
                             </div>
-                            <div class="rounded-bottom card-body">
-                                <div class="col-12">
-                                    <spotify-player></spotify-player>
-                                </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col d-flex justify-content-center">
+                                <button class="btn btn-outline-light btn-lg" v-on:click="showEpk">Check out my EPK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3 pl-0">
+                    <div class="card rounded border-light trans">
+                        <div class="card-header border-0 trans">
+                            <div class="col-sm-12">
+                                <img src="/img/wof_v1-01.svg" class="scaled" alt="World On Fire">
+                            </div>
+                        </div>
+                        <div class="card-body rounded-bottom">
+                            <div class="col-sm-12">
+                                <iframe
+                                    width="100%"
+                                    height="250"
+                                    src="https://www.youtube.com/embed/174rjcy0hEs"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
                             </div>
                         </div>
                     </div>
@@ -67,9 +96,6 @@
             </div>
         </div>
     </div>
-
-
-
 </template>
 
 <script>
@@ -82,7 +108,13 @@ import SpotifyPlayer from "./SpotifyPlayer";
         },
         mounted() {
             console.log('Component mounted.')
+        },
+        methods: {
+        showEpk() {
+            var pdf = '../assets/Chris_Stath_EPK_2.pdf';
+            window.open(pdf);
         }
+    },
     }
 </script>
 
@@ -90,8 +122,8 @@ import SpotifyPlayer from "./SpotifyPlayer";
     #bg-full {
         width: 100%;
         height: 100vh;
-        background-image: url(/img/landing-01.png);
-        background-position: center 66px;
+        background-image: url(/img/landing_middle.png);
+        background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-color: black;
@@ -106,6 +138,13 @@ import SpotifyPlayer from "./SpotifyPlayer";
     div.trans {
         background: rgba(80, 77, 77, 0.4);
     }
+    .scaled {
+        width: 100%;
+        height: 70px;
+    }
+
+
+
 
 
 </style>
