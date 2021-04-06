@@ -1,7 +1,7 @@
 <template>
     <div>
-        <nav class="navbar navbar-header fixed-top navbar-expand-md navbar-dark justify-content-center" style="background-color: #000000">
-            <ul class="navbar-nav">
+        <nav class="navbar navbar-header fixed-top navbar-expand-md navbar-dark justify-content-center flex" style="background-color: #000000">
+            <ul class="navbar-nav mr-auto lemon-center">
                 <li class="nav-item">
                     <div>
 
@@ -17,7 +17,7 @@
                     </div>
                 </li>
             </ul>
-            <div class="navbar-brand mx-auto">
+            <div class="navbar-brand abs">
                 <img class="" src="https://i2.wp.com/slingshotartists.com/wp-content/uploads/2020/05/cs_white_logo.png?w=390&ssl=1" alt="">
             </div>
         </nav>
@@ -26,11 +26,11 @@
 </template>
 
 <script>
-import { Slide } from 'vue-burger-menu';
+// import { Slide } from 'vue-burger-menu';
 
 export default {
     components: {
-        Slide
+       // Slide
     },
     methods: {
         showEpk() {
@@ -45,6 +45,17 @@ export default {
    .lemon {
         height: 60px;
         width: 50px;
+    }
+
+    .abs {
+        position: absolute;
+        display: block;
+    }
+
+    @media only screen and ( max-width: 540px) {
+        .lemon-center {
+            margin: auto !important;
+        }
     }
 </style>
 
